@@ -23,3 +23,4 @@ end
 add_subcats("Community",["activities", "childcare","general","volunteers","classes"])
 add_subcats("Housing",["apts / housing", "rooms / shared", "sublets / temp", "housing wanted", "vacation rentals"])
 add_subcats("For Sale",%w(appliances antiques barter bikes business computer free furniture general tools arts+crafts baby+kids garage_sale))
+add_subcats("Services",%w(creative computer event legal lessons automotive household real_estate travel+vac))
