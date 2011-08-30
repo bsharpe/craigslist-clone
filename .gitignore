@@ -1,2 +1,4 @@
 .rvmrc*
 temp/*
+*.sqlite3
+log/*
