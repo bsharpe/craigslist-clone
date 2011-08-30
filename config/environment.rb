@@ -27,6 +27,11 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+  
+  config.gem "paperclip"
+  config.gem "will_paginate", :version => "2.3.16"
+  config.gem "permalink_fu"
+  config.gem "simple_captcha"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -87,6 +92,3 @@ ActionMailer::Base.smtp_settings = {
   :user_name  => "mailuser@yourdomain.com",
   :password  => "mailuserpassword"
 }
-
-require "will_paginate"
-require "paperclip"
