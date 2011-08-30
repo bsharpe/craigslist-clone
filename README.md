@@ -27,6 +27,7 @@ Ruby 1.8.7, Rails 2.3.12, RMagick/ImageMagick and MySQL / SQLite
 ## Installing Locally / Desktop Installation
 
 * Clone Railslist to your local machine
+* execute >rake gems:install
 * execute >rake db:setup
 * Amend \railslist\config\initializers\siteconfig.rb - set SITENAME = "railslist.com" & SITEURL = "http://localhost:3000".
 
