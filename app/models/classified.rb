@@ -1,3 +1,27 @@
+# == Schema Information
+#
+# Table name: classifieds
+#
+#  id                 :integer         not null, primary key
+#  title              :string(75)
+#  description        :text
+#  location           :string(75)
+#  adtype             :string(1)       default("O")
+#  email              :string(75)
+#  phone              :string(75)
+#  activation_code    :string(40)
+#  status             :integer(1)      default(0)
+#  category_id        :integer
+#  subcategory_id     :integer
+#  city_id            :integer
+#  permalink          :string(255)
+#  image_file_name    :string(255)
+#  image_content_type :string(255)
+#  image_file_size    :integer
+#  created_at         :datetime
+#  updated_at         :datetime
+#
+
 class Classified < ActiveRecord::Base
  belongs_to :category
  belongs_to :subcategory
