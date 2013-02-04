@@ -27,14 +27,14 @@ Railslist has been developed in Ruby on Rails, hence the name. It uses MySQL dat
 Railslist can be installed either on a Webserver or locally (Desktop). Irrespective where you install, it is assumed that the target system is already installed with Ruby, Rails, MySQL and ImageMagick/RMagick (used for captcha). 
 
 ## Prerequisites
-Ruby 1.8.7, Rails 2.3.12, RMagick/ImageMagick and MySQL / SQLite
+Ruby 1.9, Rails 2.3, RMagick/ImageMagick and SQLite
+(The production database choice is left as an exercise for the reader)
 
 ## Installing Locally / Desktop Installation
 
 * Clone Railslist to your local machine
-* execute >rake gems:install
+* execute >bundle install
 * execute >rake db:setup
-* Amend \railslist\config\initializers\siteconfig.rb - set SITENAME = "railslist.com" & SITEURL = "http://localhost:3000".
 * Then, execute >script/server 
 
 Thats it!.
