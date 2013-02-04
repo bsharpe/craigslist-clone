@@ -5,7 +5,7 @@
 # ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.12' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.16' unless defined? RAILS_GEM_VERSION
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
@@ -28,10 +28,10 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   
-  config.gem "paperclip"
-  config.gem "will_paginate", :version => "2.3.16"
-  config.gem "permalink_fu"
-  config.gem "simple_captcha"
+  #config.gem "paperclip"
+  #config.gem "will_paginate", :version => "2.3.16"
+  #config.gem "permalink_fu"
+  #config.gem "simple_captcha"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -60,8 +60,8 @@ Rails::Initializer.run do |config|
   # Make sure the secret is at least 30 characters and all random, 
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
-    :session_key => '_railslist_session',
-    :secret      => 'b1dc292a193228fb4e63522b41b5bb4989995edf5b8748497e3777174b51da1a66e9cf229686096c4e6a248229d51e566c004418bee8939211d5d0005aa0c337'
+    :key => '_railslist_session',
+    :secret      => 'b1dc292a193228fb4e63522b41b5bb4989995edf5b8748497e3777174b51da1a66e9cf229686096c4e6a2486764803849229d51e566c004418bee8939211d5d0005aa0c337'
   }
 
   # Use the database for sessions instead of the cookie-based default,
